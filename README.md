@@ -1,8 +1,11 @@
-Сборка dnsperf в Docker  
+Сборка dnsperf в Docker
+===
 
-howto  
-docker build -t dnsperf .  
-docker run -it --rm dnsperf dnsperf  
+**howto**  
+- docker build -t dnsperf .  
+- docker run -it --rm dnsperf dnsperf  
+
+**help**  
 
 dnsperf -s 109.195.161.96 -l 240 -c 1 -q 100 -Q 100 -t 5 -d /usr/share/dnsperf/30k_query  
 
