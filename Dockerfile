@@ -20,4 +20,6 @@ RUN wget https://www.dns-oarc.net/files/dnsperf/$DNSPERF.tar.gz \
     && make install \
     && rm -rf /$DNSPERF*
 
+ADD ./30k_query /usr/share/dnsperf/30k_query
+
 CMD ["sh"]
